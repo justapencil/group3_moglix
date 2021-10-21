@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LandingComponent } from './components/layout/landing/landing.component';
-import { HeaderComponent } from './components/layout/header/header.component';
-import { FooterComponent } from './components/layout/footer/footer.component';
+import { HeaderComponent } from './components/layouts/header/header.component';
+import { FooterComponent } from './components/layouts/footer/footer.component';
+import { LandingComponent } from './components/layouts/landing/landing.component';
+import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
   declarations: [
-    LandingComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LandingComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,SharedModule, RouterModule
+  ],
+  exports: [HeaderComponent,FooterComponent,LandingComponent]
 })
 export class CoreModule { }
