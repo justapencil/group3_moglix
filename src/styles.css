@@ -18,9 +18,16 @@
   padding: 20px;
   text-align: center;
 }
-
+.products {
+  width: 800px;
+  height: 100px;
+  background-color: rgb(236, 5, 5);
+  margin: auto;
+  padding: 20px;
+  margin-top: 55px;
+}
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track of scrollbar(colour)*/
