@@ -6,11 +6,13 @@ import { ProductsComponent } from './components/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { ViewComponent } from './components/view/view.component';
 
 
 @NgModule({
   declarations: [
-    ProductsComponent
+    ProductsComponent,
+    ViewComponent
   ],
   imports: [
     CommonModule,HttpClientModule,FormsModule,

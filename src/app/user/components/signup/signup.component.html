@@ -10,7 +10,7 @@
               <input type="text" class="form-control form-control-lg"
 
               [ngClass]="{'form-control form-control-lg':true,'is-invalid':error.username}" 
-               placeholder="ENTER FULLName" name="name" 
+               placeholder="Enter your username" name="name" 
               [(ngModel)]="user.username"
               
               required />
@@ -21,7 +21,7 @@
               <input type="email" class="form-control form-control-lg"
               [ngClass]="{'form-control form-control-lg':true,'is-invalid':error.email}" 
               
-              placeholder="Email Address" name="email" 
+              placeholder="Enter UserName" name="email" 
               [(ngModel)]="user.email"/>
              <div class="invalid-feedback d-block">{{error.email}}</div>
               
@@ -31,21 +31,14 @@
               [ngClass]="{'form-control form-control-lg':true,'is-invalid':error.password}"
               placeholder="Password" name="password" 
               [(ngModel)]="user.password"/>
-              <div class="invalid-feedback d-block">{{error.password}}</div>
+              
             </div>
             <div class="form-group">
               <input type="password" class="form-control form-control-lg" 
               [ngClass]="{'form-control form-control-lg':true,'is-invalid':error.userid}" 
-              placeholder="Enter UserId" name="userId"
-              [(ngModel)]="user.userid" />
-              <div class="invalid-feedback d-block">{{error.userid}}</div>
-            </div>
-            <div class="form-group">
-              <input type="roleid" class="form-control form-control-lg" 
-              [ngClass]="{'form-control form-control-lg':true,'is-invalid':error.roleId}" 
-              placeholder="Enter RoleId" name="roleId"
-              [(ngModel)]="user.roleId" />
-              <div class="invalid-feedback d-block">{{error.roleid}}</div>
+              placeholder="Confirm Password" name="password2"
+              [(ngModel)]="user.password2" />
+              <div class="invalid-feedback d-block">{{error.password}}</div>
             </div>
             <input type="submit" class="btn btn-info btn-block mt-4" />
           </form>
