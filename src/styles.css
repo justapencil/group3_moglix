@@ -18,7 +18,7 @@
   padding: 20px;
   text-align: center;
 }
-<<<<<<< HEAD
+
 .products {
   width: 800px;
   height: 100px;
@@ -27,7 +27,7 @@
   padding: 20px;
   margin-top: 55px;
 }
-=======
+
 .admin {
   width: 800px !important;
   height: 100% !important;
@@ -35,7 +35,6 @@
   margin-top: 55px !important;
 }
 
->>>>>>> 507ea93da78ed5c8399b20b832282b7aa7adce24
 ::-webkit-scrollbar {
   width: 5px;
 }
