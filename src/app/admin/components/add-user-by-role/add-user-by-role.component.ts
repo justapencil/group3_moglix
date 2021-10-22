@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/user/models/user';
 
 @Component({
   selector: 'app-add-user-by-role',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-user-by-role.component.css']
 })
 export class AddUserByRoleComponent implements OnInit {
+  user: User= new User();
+  error: any = {};
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  registerSubmit(){
+    
   }
 
 }
