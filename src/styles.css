@@ -18,6 +18,12 @@
   padding: 20px;
   text-align: center;
 }
+.admin {
+  width: 800px !important;
+  height: 100% !important;
+  margin: auto !important;
+  margin-top: 55px !important;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
